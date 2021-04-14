@@ -22,22 +22,15 @@ public class Shoes{
     }
 
     public Shoes(String brand, float price, int size, String color) {
-        this.brand = brand;
-        this.price = price;
-        this.size = size;
-        this.color = color;
+        this(brand,price,size,color,"","","","", false,0,0);
         popularity += 1;
     }
 
-    public Shoes(String brand, float price, int size, String color, String name, String countryManufacture, String shoeCollection, String material, boolean isShoelace, int comfort, int reliability) {
-        this(brand, price, size, color);
-        this.name = name;
-        this.countryManufacture = countryManufacture;
-        this.shoeCollection = shoeCollection;
-        this.material = material;
-        this.isShoelace = isShoelace;
-        this.comfort = comfort;
-        this.reliability = reliability;
+    public Shoes(String brand, float price, int size, String color, String name, String countryManufacture,
+                 String shoeCollection, String material, boolean isShoelace, int comfort, int reliability) {
+        resetValues(brand, price, size, color, name, countryManufacture, shoeCollection, material, isShoelace,
+                comfort, reliability);
+        popularity +=1;
     }
 
     //getters&setters
@@ -123,7 +116,8 @@ public class Shoes{
         System.out.println("popularity from object: "+ popularity);
     }
 
-    public void resetValues(String brand, float price, int size, String color, String name, String countryManufacture, String shoeCollection, String material, boolean isShoelace, int comfort, int reliability){
+    public void resetValues(String brand, float price, int size, String color, String name, String countryManufacture,
+                            String shoeCollection, String material, boolean isShoelace, int comfort, int reliability){
         this.brand = brand;
         this.price = price;
         this.size = size;
@@ -135,7 +129,6 @@ public class Shoes{
         this.isShoelace = isShoelace;
         this.comfort = comfort;
         this.reliability = reliability;
-
     }
 
     @Override
@@ -153,7 +146,5 @@ public class Shoes{
                 "|\n| Reliability: " + reliability +
                 "|\n________________________\n";
     }
-
-
-
+    
 }
