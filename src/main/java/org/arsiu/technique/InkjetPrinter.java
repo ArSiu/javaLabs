@@ -9,32 +9,19 @@ import org.arsiu.file.File;
 @Setter
 @Getter
 @NoArgsConstructor
-public class InkjetPrinter extends Printer {
+public final class InkjetPrinter extends Printer {
     private int amountOfCartridges;
 
-    public InkjetPrinter(String name, String model,
-                         Companies manufactoryCompany,
-                         int yearOfManufactory,
-                         float price,
-                         float inputVoltage,
-                         float watts,
-                         int amountOfInputPaper,
-                         int amountOfOutputPaper,
-                         int amountOfCartridges) {
-        super(
-                name,
-                model,
-                manufactoryCompany,
-                yearOfManufactory,
-                price,
-                inputVoltage,
-                watts,
-                amountOfInputPaper,
-                amountOfOutputPaper
-        );
-
-        this.amountOfCartridges = amountOfCartridges;
-
+    public InkjetPrinter(final String name, final String model,
+                         final Companies manufactoryCompany,
+                         final int yearOfManufactory, final float price,
+                         final float inputVoltage, final float watts,
+                         final int amountOfInputPaper,
+                         final int amountOfOutputPaper,
+                         final int amountOfCartridgees) {
+        super(name, model, manufactoryCompany, yearOfManufactory, price,
+                inputVoltage, watts, amountOfInputPaper, amountOfOutputPaper);
+        amountOfCartridges = amountOfCartridgees;
     }
 
     @Override
@@ -44,9 +31,9 @@ public class InkjetPrinter extends Printer {
                 + "|\n________________________\n";
     }
 
-    public void printPages(List<File> files) {
+    public final void printPages(final List<File> listfiles) {
         if (amountOfCartridges != 0) {
-            for (File page : files) {
+            for (File page : listfiles) {
                 System.out.println(page);
             }
         }

@@ -6,68 +6,55 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.arsiu.file.File;
 
-
-@SuppressWarnings("checkstyle:LineLength")
 @Setter
 @Getter
 @NoArgsConstructor
 public class Printer extends Technique {
-    private int amountOfInputPaper;
-    private int amountOfOutputPaper;
+    private int amountOfInputPapers;
+    private int amountOfOutputPapers;
     private List<File> files;
     private boolean isRunning;
 
-    public Printer(String name,
-                   String model,
-                   Companies manufactoryCompany,
-                   int yearOfManufactory,
-                   float price,
-                   float inputVoltage,
-                   float watts,
-                   int amountOfInputPaper,
-                   int amountOfOutputPaper) {
-        super(
-                name,
-                model,
-                manufactoryCompany,
-                yearOfManufactory,
-                price,
-                inputVoltage,
-                watts
-        );
-
-        this.amountOfInputPaper = amountOfInputPaper;
-        this.amountOfOutputPaper = amountOfOutputPaper;
-
+    public Printer(final String name, final String model,
+                   final Companies manufactoryCompany,
+                   final int yearOfManufactory, final float price,
+                   final float inputVoltage, final float watts,
+                   final int amountOfInputPaper,
+                   final int amountOfOutputPaper) {
+        super(name, model, manufactoryCompany, yearOfManufactory, price,
+                inputVoltage, watts);
+        amountOfInputPapers = amountOfInputPaper;
+        amountOfOutputPapers = amountOfOutputPaper;
     }
 
     @Override
     public String toString() {
         return objToString()
-                + "|\n|Amount Of Input Paper: " + amountOfInputPaper
-                + "|\n|Amount Of Output Paper: " + amountOfOutputPaper
+                + "|\n|Amount Of Input Paper: " + amountOfInputPapers
+                + "|\n|Amount Of Output Paper: " + amountOfOutputPapers
                 + "|\n________________________\n";
     }
 
-    public void turnOn() {
+    public final void turnOn() {
         System.out.println("Ski Ba Bop Ba Dop Bop I`m On");
     }
 
-    public void turnOff() {
-        System.out.println("Ya narodyvsya v gondurasii misto Sambir bilya lvova I`m Off");
+    public final void turnOff() {
+        System.out.println("Ya narodyvsya v gondurasii misto "
+                + "Sambir bilya lvova I`m Off");
     }
 
-    public void printPages(List<File> files) {
-        for (File page : files) {
+    public void printPages(final List<File> listfiles) {
+        for (File page : listfiles) {
             System.out.println(page);
         }
     }
 
-    public void copyPage() {
+    public final void copyPage() {
         System.out.println("Ya svoboden slovno ptiza v nebesah");
     }
 
-    public void addFile(File file) {
+    public final void addFile(final File file) {
         files.add(file);
     }
 

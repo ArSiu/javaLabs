@@ -7,32 +7,21 @@ import lombok.Setter;
 @Setter
 @Getter
 @NoArgsConstructor
-public class Shredder extends Technique {
+public final class Shredder extends Technique {
     private int amountOfBlades;
     private int sharpeningOfBlades;
 
-    public Shredder(final String name,
-                    final String model,
+    public Shredder(final String name, final String model,
                     final Companies manufactoryCompany,
                     final int yearOfManufactory,
-                    final float price,
-                    final float inputVoltage,
-                    final float watts,
-                    final int amountOfBlades,
-                    final int sharpeningOfBlades) {
-        super(
-                name,
-                model,
-                manufactoryCompany,
-                yearOfManufactory,
-                price,
-                inputVoltage,
-                watts
-        );
+                    final float price, final float inputVoltage,
+                    final float watts, final int amountOfBlade,
+                    final int sharpeningOfBlade) {
+        super(name, model, manufactoryCompany, yearOfManufactory, price,
+                inputVoltage, watts);
 
-        this.amountOfBlades = amountOfBlades;
-        this.sharpeningOfBlades = sharpeningOfBlades;
-
+        amountOfBlades = amountOfBlade;
+        sharpeningOfBlades = sharpeningOfBlade;
     }
 
     @Override

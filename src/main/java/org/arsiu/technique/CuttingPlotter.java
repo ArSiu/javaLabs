@@ -4,34 +4,21 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@SuppressWarnings("checkstyle:Indentation")
 @Setter
 @Getter
 @NoArgsConstructor
-public class CuttingPlotter extends Technique {
+public final class CuttingPlotter extends Technique {
 
     private String nameOfBlade;
 
-    public CuttingPlotter(String name,
-                          String model,
-                          Companies manufactoryCompany,
-                          int yearOfManufactory,
-                          float price,
-                          float inputVoltage,
-                          float watts,
-                          String nameOfBlade) {
-        super(
-                name,
-                model,
-                manufactoryCompany,
-                yearOfManufactory,
-                price,
-                inputVoltage,
-                watts
-        );
-
-        this.nameOfBlade = nameOfBlade;
-
+    public CuttingPlotter(final String name, final String model,
+                          final Companies manufactoryCompany,
+                          final int yearOfManufactory, final float price,
+                          final float inputVoltage, final float watts,
+                          final String nameOfBlad) {
+        super(name, model, manufactoryCompany, yearOfManufactory, price,
+                inputVoltage, watts);
+        nameOfBlade = nameOfBlad;
     }
 
     @Override

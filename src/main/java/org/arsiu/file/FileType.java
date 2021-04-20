@@ -1,3 +1,3 @@
 package org.arsiu.file;
 
-enum FileType{ FTP, FTPS, SFTP }
+public enum FileType { FTP, FTPS, SFTP }

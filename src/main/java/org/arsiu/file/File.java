@@ -1,13 +1,11 @@
 package org.arsiu.file;
 
-import org.arsiu.file.FileType;
-
 public class File {
-    private final FileType type;
-    private final String name;
+    private FileType type;
+    private String name;
 
-    public File(FileType type, String name) {
-        this.type = type;
-        this.name = name;
+    public File(final FileType fileType, final String fileName) {
+        type = fileType;
+        name = fileName;
     }
 }

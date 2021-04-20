@@ -7,33 +7,24 @@ import lombok.Setter;
 @Setter
 @Getter
 @NoArgsConstructor
-public class LaserPrinter extends Printer {
+public final class LaserPrinter extends Printer {
     private boolean isLaser;
 
-
-    public LaserPrinter(String name, String model, Companies manufactoryCompany, int yearOfManufactory,
-                        float price, float inputVoltage, float watts, int amountOfInputPaper, int amountOfOutputPaper,
-                        boolean isLaser) {
-        super(
-                name,
-                model,
-                manufactoryCompany,
-                yearOfManufactory,
-                price,
-                inputVoltage,
-                watts,
-                amountOfInputPaper,
-                amountOfOutputPaper
-        );
-
-        this.isLaser = isLaser;
-
+    public LaserPrinter(final String name, final String model,
+                        final Companies manufactoryCompany,
+                        final int yearOfManufactory, final float price,
+                        final float inputVoltage, final float watts,
+                        final int amountOfInputPaper,
+                        final int amountOfOutputPaper, final boolean isLaseer) {
+        super(name, model, manufactoryCompany, yearOfManufactory, price,
+                inputVoltage, watts, amountOfInputPaper, amountOfOutputPaper);
+        isLaser = isLaseer;
     }
 
     @Override
     public String toString() {
-        return objToString() +
-                "|\n|Is laser: " + isLaser +
-                "|\n________________________\n";
+        return objToString()
+                + "|\n|Is laser: " + isLaser
+                + "|\n________________________\n";
     }
 }
