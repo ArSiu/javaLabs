@@ -7,12 +7,13 @@
     <groupId>org.arsiu</groupId>
     <artifactId>Lab8v1</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
     <properties>
-
         <java.version>1.11</java.version>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <start-class>org.arsiu.Main</start-class>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <linkXRef>false</linkXRef>
         <log4j2.version>2.14.1</log4j2.version>
@@ -22,8 +23,10 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.10</version>
+            <version>1.18.20</version>
+            <scope>compile</scope>
         </dependency>
+
     </dependencies>
 
     <build>
