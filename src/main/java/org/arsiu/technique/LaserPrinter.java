@@ -11,11 +11,23 @@ public class LaserPrinter extends Printer {
     private boolean isLaser;
 
 
-    public LaserPrinter(String name, String model, Companies.COMPANIES manufactoryCompany, int yearOfManufactory,
+    public LaserPrinter(String name, String model, Companies manufactoryCompany, int yearOfManufactory,
                         float price, float inputVoltage, float watts, int amountOfInputPaper, int amountOfOutputPaper,
                         boolean isLaser) {
-        super(name, model, manufactoryCompany, yearOfManufactory, price, inputVoltage, watts, amountOfInputPaper, amountOfOutputPaper);
+        super(
+                name,
+                model,
+                manufactoryCompany,
+                yearOfManufactory,
+                price,
+                inputVoltage,
+                watts,
+                amountOfInputPaper,
+                amountOfOutputPaper
+        );
+
         this.isLaser = isLaser;
+
     }
 
     @Override

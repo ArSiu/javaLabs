@@ -1,34 +1,52 @@
 package org.arsiu.technique;
 
+import java.util.List;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.arsiu.file.File;
-import java.util.List;
-import org.arsiu.technique.Companies.COMPANIES;
 
+
+@SuppressWarnings("checkstyle:LineLength")
 @Setter
 @Getter
 @NoArgsConstructor
 public class Printer extends Technique {
-    public int amountOfInputPaper;
-    public int amountOfOutputPaper;
+    private int amountOfInputPaper;
+    private int amountOfOutputPaper;
     private List<File> files;
     private boolean isRunning;
 
-    public Printer(String name, String model, COMPANIES manufactoryCompany, int yearOfManufactory, float price,
-                   float inputVoltage, float watts, int amountOfInputPaper, int amountOfOutputPaper) {
-        super(name, model, manufactoryCompany, yearOfManufactory, price, inputVoltage, watts);
+    public Printer(String name,
+                   String model,
+                   Companies manufactoryCompany,
+                   int yearOfManufactory,
+                   float price,
+                   float inputVoltage,
+                   float watts,
+                   int amountOfInputPaper,
+                   int amountOfOutputPaper) {
+        super(
+                name,
+                model,
+                manufactoryCompany,
+                yearOfManufactory,
+                price,
+                inputVoltage,
+                watts
+        );
+
         this.amountOfInputPaper = amountOfInputPaper;
         this.amountOfOutputPaper = amountOfOutputPaper;
+
     }
 
     @Override
     public String toString() {
-        return objToString() +
-                "|\n|Amount Of Input Paper: " + amountOfInputPaper +
-                "|\n|Amount Of Output Paper: " + amountOfOutputPaper +
-                "|\n________________________\n";
+        return objToString()
+                + "|\n|Amount Of Input Paper: " + amountOfInputPaper
+                + "|\n|Amount Of Output Paper: " + amountOfOutputPaper
+                + "|\n________________________\n";
     }
 
     public void turnOn() {
@@ -40,7 +58,7 @@ public class Printer extends Technique {
     }
 
     public void printPages(List<File> files) {
-        for (File page:files){
+        for (File page : files) {
             System.out.println(page);
         }
     }
@@ -49,7 +67,7 @@ public class Printer extends Technique {
         System.out.println("Ya svoboden slovno ptiza v nebesah");
     }
 
-    public void addFile(File file){
+    public void addFile(File file) {
         files.add(file);
     }
 

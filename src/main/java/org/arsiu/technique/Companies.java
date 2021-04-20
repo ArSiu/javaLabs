@@ -1,7 +1,3 @@
 package org.arsiu.technique;
 
-public class Companies {
-    public enum COMPANIES{
-        PANASONIC, BOSCH, PHILIPS;
-    }
-}
+public enum Companies { PANASONIC, BOSCH, PHILIPS }

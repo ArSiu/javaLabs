@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.arsiu.technique.Companies.COMPANIES;
 
 @Setter
 @Getter
@@ -12,31 +11,27 @@ import org.arsiu.technique.Companies.COMPANIES;
 @AllArgsConstructor
 public class Technique {
 
-    public String name;
-    public String model;
-    public COMPANIES manufactoryCompany;
-    public int yearOfManufactory;
-    public float price;
-    public float inputVoltage;
-    public float watts;
+    private String name;
+    private String model;
+    private Companies manufactoryCompany;
+    private int yearOfManufactory;
+    private float price;
+    private float inputVoltage;
+    private float watts;
 
     @Override
     public String toString() {
-        return objToString() +"|\n________________________\n";
+        return objToString() + "|\n________________________\n";
     }
 
-    public String objToString(){
-        return "________________________" +
-                "\n|Name: " + name +
-                "|\n|Model: " + model +
-                "|\n|Manufactory Company: " + manufactoryCompany +
-                "|\n|Year Of Manufactory: " + yearOfManufactory +
-                "|\n|Price: " + getPrice() +
-                "|\n|Input Voltage: " + inputVoltage +
-                "|\n|Watts: " + watts;
+    public String objToString() {
+        return "________________________"
+                + "\n|Name: " + name
+                + "|\n|Model: " + model
+                + "|\n|Manufactory Company: " + manufactoryCompany
+                + "|\n|Year Of Manufactory: " + yearOfManufactory
+                + "|\n|Price: " + price
+                + "|\n|Input Voltage: " + inputVoltage
+                + "|\n|Watts: " + watts;
     }
-
-
-
-
 }
