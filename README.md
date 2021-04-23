@@ -1,15 +1,15 @@
-# javaLabs
+# Java lab2
 
-### Task rewrite code from lab2(UML for python) on java using:
+### [1]Task rewrite code from lab2(UML for python) on java using:
 - lambda,
 - maven,
 - FindBugs,
 - CheckStyle,
 - PDM,
 - Jacoco.
-#### UML diagram
+### [1.2]UML diagram
 ![image](https://drive.google.com/uc?export=view&id=1hDHSoQW4l18hA65cS-UpHeqIzkCsMIyf)
-### hOw tO Run
+### [2]hOw tO Run
 ```
 $ git clone https://github.com/ArSiu/javaLabs.git
 $ cd javaLabs
@@ -19,9 +19,9 @@ $ mvn site
 $ cd target/site
 $ run checkstyle.html
 ```
-### All realization of methods in class TechniqueManager package manager
+### [3]All realization of methods in class TechniqueManager package manager
 <details>
-<summary>addTechnique</summary>
+<summary>[3.1]addTechnique</summary>
 <p>
 
 ```java
@@ -33,7 +33,7 @@ public void addTechnique(final Technique technique) {
 </details> 
 
 <details>
-<summary>sortByName</summary>
+<summary>[3.2]sortByName</summary>
 <p>
 
 ```java
@@ -52,7 +52,7 @@ public List<Technique> sortByName(final boolean reverse) {
 </details>  
 
 <details>
-<summary>sortByPrice</summary>
+<summary>[3.3]sortByPrice</summary>
 <p>
 
 ```java
@@ -71,7 +71,7 @@ public List<Technique> sortByPrice(final boolean reverse) {
 </details>
 
 <details>
-<summary>searchBar</summary>
+<summary>[3.4]searchBar</summary>
 <p>
 
 ```java
@@ -84,7 +84,7 @@ public Optional<Technique> searchBar(final String search) {
 </details>
 
 <details>
-<summary>show</summary>
+<summary>[3.5]show</summary>
 <p>
 
 ```java
@@ -95,7 +95,7 @@ public void show(final boolean reverse, final List<Technique> techniques) {
 </p>
 </details> 
 
-### Pom.xml
+### [4]Pom.xml
 <details>
 <summary>Pom.xml</summary>
 <p>
@@ -209,6 +209,6 @@ public void show(final boolean reverse, final List<Technique> techniques) {
 </details>
 
 
-
+## [5]Links
 ### UML link:https://drive.google.com/file/d/1hDHSoQW4l18hA65cS-UpHeqIzkCsMIyf/view?usp=sharing
 ### Python lab https://github.com/ArSiu/pyLabs/tree/lab3
