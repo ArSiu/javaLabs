@@ -7,6 +7,8 @@
 - CheckStyle,
 - PDM,
 - Jacoco.
+#### UML diagram
+![Test Image 7](https://drive.google.com/file/d/1hDHSoQW4l18hA65cS-UpHeqIzkCsMIyf/view?usp=sharing)
 ### hOw tO Run
 ```
 $ git clone https://github.com/ArSiu/javaLabs.git
