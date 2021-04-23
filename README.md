@@ -17,7 +17,8 @@ $ mvn site
 $ cd target/site
 $ run checkstyle.html
 ```
-### all sort methods are in class TechniqueManager package manager
+### All sort methods are in class TechniqueManager package manager
+
 <details>
 <summary>sortByName</summary>
 <p>
@@ -33,8 +34,7 @@ public List<Technique> sortByName(final boolean reverse) {
         }
         return tech;
     }
-\```
-
+```
 </p>
 </details>  
 
@@ -53,8 +53,7 @@ public List<Technique> sortByPrice(final boolean reverse) {
         }
         return tech;
     }
-\```
-
+```
 </p>
 </details>
 
