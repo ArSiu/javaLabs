@@ -5,6 +5,7 @@ import static org.arsiu.technique.Companies.PANASONIC;
 import static org.arsiu.technique.Companies.PHILIPS;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
@@ -31,7 +32,9 @@ public class Main {
 
         manager.sortByName(true).forEach(System.out::println);
         manager.sortByPrice(true).forEach(System.out::println);
-        manager.searchBar("INKJ2000").ifPresent(System.out::println);
+            manager.searchBar("INKJ2000").ifPresent(System.out::println);
         manager.show(true, manager.getTech());
+        List<Integer> a = new ArrayList<Integer>();
+
     }
 }
