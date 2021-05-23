@@ -43,8 +43,7 @@ public final class TechniqueManager {
     }
 
     public Optional<Technique> searchBar(final String search) {
-        return tech.stream().filter(t ->
-                t.getName().equals(search)).findAny();
+        return tech.stream().filter(t -> t.getName().equals(search)).findAny();
     }
 
     public void show(final boolean reverse, final List<Technique> techniques) {
