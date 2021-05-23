@@ -1,11 +1,12 @@
 # Java lab3
 
-### [1]Task rewrite code from lab2(UML for python) on java using:
-- lambda,
+### [1]Task create rest for parent obj from lab2(UML) on java using:
+- spring
 - maven,
 - FindBugs,
 - CheckStyle,
 - PDM,
+- lambda,
 - Jacoco(only attach to pom)
 ### [1.2]UML diagram
 ![image](https://drive.google.com/uc?export=view&id=1hDHSoQW4l18hA65cS-UpHeqIzkCsMIyf)
