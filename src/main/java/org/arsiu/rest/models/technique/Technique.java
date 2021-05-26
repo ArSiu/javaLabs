@@ -1,23 +1,25 @@
-package org.arsiu.technique;
+package org.arsiu.rest.models.technique;
 
 import lombok.*;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
+import javax.persistence.*;
 import javax.validation.constraints.*;
 
 @Setter
 @Getter
 @NoArgsConstructor
+@Entity
 
 public class Technique {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NotNull(message = "Missing name")
-    @Size(min=2, max=30)
+    @Size(min=2, max=32)
     private String name;
 
     @NotNull(message = "Missing model")
-    @Size(min=2, max=30)
+    @Size(min=2, max=32)
     private String model;
 
     @NotNull(message = "Missing Companies (enum)")
@@ -44,14 +46,16 @@ public class Technique {
     @Max(999999)
     private float watts;
 
-    public Technique(String name, String model, Companies manufactoryCompany, int yearOfManufactory, float price, float inputVoltage, float watts) {
-        this.name = name;
-        this.model = model;
-        this.manufactoryCompany = manufactoryCompany;
-        this.yearOfManufactory = yearOfManufactory;
-        this.price = price;
-        this.inputVoltage = inputVoltage;
-        this.watts = watts;
+    public Technique(final String namePar, final String modelPar, final Companies manufactoryCompanyPar,
+                     final int yearOfManufactoryPar, final float pricePar, final float inputVoltagePar,
+                     final float wattsPar) {
+        this.name = namePar;
+        this.model = modelPar;
+        this.manufactoryCompany = manufactoryCompanyPar;
+        this.yearOfManufactory = yearOfManufactoryPar;
+        this.price = pricePar;
+        this.inputVoltage = inputVoltagePar;
+        this.watts = wattsPar;
     }
 
     public String objToString() {

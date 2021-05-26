@@ -1,20 +1,18 @@
-package org.arsiu;
+package org.arsiu.rest.models;
 
-import static org.arsiu.technique.Companies.BOSCH;
-import static org.arsiu.technique.Companies.PANASONIC;
-import static org.arsiu.technique.Companies.PHILIPS;
-
+import static org.arsiu.rest.models.technique.Companies.BOSCH;
+import static org.arsiu.rest.models.technique.Companies.PANASONIC;
+import static org.arsiu.rest.models.technique.Companies.PHILIPS;
 import java.util.ArrayList;
 import java.util.List;
-
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
-import org.arsiu.manager.TechniqueManager;
-import org.arsiu.technique.CuttingPlotter;
-import org.arsiu.technique.InkjetPrinter;
-import org.arsiu.technique.LaserPrinter;
-import org.arsiu.technique.Shredder;
-import org.arsiu.technique.Technique;
+import org.arsiu.rest.models.manager.TechniqueManager;
+import org.arsiu.rest.models.technique.CuttingPlotter;
+import org.arsiu.rest.models.technique.InkjetPrinter;
+import org.arsiu.rest.models.technique.LaserPrinter;
+import org.arsiu.rest.models.technique.Shredder;
+import org.arsiu.rest.models.technique.Technique;
 
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class Main {
