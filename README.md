@@ -1,22 +1,26 @@
-# Java lab3
+# Java lab4
 
 ### [1]Task make rest spring for lab2:
-- spring,
+- JpaResitory,
+- slf4j,
+- spring validator,
+- handlers for:
+- - notFound,
+- - invalidInPut,
 - maven,
 - FindBugs,
 - CheckStyle,
 - PDM,
-- Jacoco.
-### [2]hOw tO Run spring
+### [2.1]hOw tO Run springapp
 ```
 $ git clone https://github.com/ArSiu/javaLabs.git
 $ cd javaLabs
-$ git checkout lab2
+$ git checkout lab4
 $ mvn compile
 $ mvn install
-$ java -jar target/Lab9v1-1.0-SNAPSHOT.jar
+$ java -jar target/Lab10v1-1.0-SNAPSHOT.jar
 ```
-### [2]hOw tO Run site
+### [2.2]hOw tO Run site
 ```
 $ git clone https://github.com/ArSiu/javaLabs.git
 $ cd javaLabs
@@ -104,5 +108,5 @@ public void show(final boolean reverse, final List<Technique> techniques) {
 
 
 ## [4]Links
-### UML link:https://drive.google.com/file/d/1hDHSoQW4l18hA65cS-UpHeqIzkCsMIyf/view?usp=sharing
-### Python lab https://github.com/ArSiu/pyLabs/tree/lab3
+### UML link: https://drive.google.com/file/d/1hDHSoQW4l18hA65cS-UpHeqIzkCsMIyf/view?usp=sharing
+### jav lab:  https://github.com/ArSiu/javaLabs/tree/lab2
