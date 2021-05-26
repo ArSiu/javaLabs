@@ -1,10 +1,10 @@
-package org.arsiu.technique;
+package org.arsiu.rest.models.technique;
 
 import java.util.List;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.arsiu.file.File;
+import org.arsiu.rest.models.file.File;
 
 @Setter
 @Getter

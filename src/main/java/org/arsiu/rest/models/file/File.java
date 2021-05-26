@@ -1,4 +1,4 @@
-package org.arsiu.file;
+package org.arsiu.rest.models.file;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package org.arsiu.technique;
+package org.arsiu.rest.models.technique;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
